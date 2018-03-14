@@ -7,6 +7,7 @@ I am using Solid Edge ST10 APP. (2018)
 Visual Studio 2013  
 Reference: [Solid Edge ST7 SDK](http://support.industrysoftware.automation.siemens.com/training/se/107/api/webframe.html) and [API doc](https://www.plm.automation.siemens.com/zh_cn/Images/Solid_Edge_API_tcm78-125829.pdf)   
 There are full sample in: https://github.com/SolidEdgeCommunity/Samples  
+Of cause the program can be written without sample. With C#, the NuGet package: Interop.SolidEdge and SolidEdge.Community should be installed in the project. (In Visual Studio, TOOLS -> NuGet Package Manager.)  
 
 ```
 The things I found:
