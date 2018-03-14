@@ -15,5 +15,8 @@ So the function of SDK is almost the same as Solid Edge APP itself. (juse used i
 I can not get the information of Solid Edge Assembly-Part file without Solid Edge APP.  
 
 ```
-`SolidEdge/Program.cs` is used to auto view the file tree of Assembly(.asm) and get the physical properties of each Part(.par) within the Assembly(.asm) in order.  
-"Assembly/ReportDocumentTree" and "Part/ReportPhysicalProperties" are what I 
+`SolidEdge/Program.cs` is used to  
+1. auto view the file tree of Assembly(.asm) and  
+2. get the physical properties of each Part(.par) within the Assembly(.asm) in order.  
+3. output the results into .xml file format  
+Mainly reference in: "Samples-master/Assembly/ReportDocumentTree" and "Samples-master/Part/ReportPhysicalProperties".
