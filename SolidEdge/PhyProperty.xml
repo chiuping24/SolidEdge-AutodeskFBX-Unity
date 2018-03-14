@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RootAssemblyFile File="c:\Users\wttcpchang\Documents\CAD\03A.ASM">
+    <DocumentTree_Part File="c:811A_X.PAR">
+        <Volume>4.32749499444939E-07</Volume>
+        <Area>0.00124717432367285</Area>
+        <Mass>0.00116842364850134</Mass>
+    </DocumentTree_Part>
+    <DocumentTree_Part File="c:158-S_A.PAR">
+        <Volume>1.02189820053361E-08</Volume>
+        <Area>3.31173460100464E-05</Area>
+        <Mass>1.63503712085377E-05</Mass>
+    </DocumentTree_Part>
+    <DocumentTree_Part File="c:535-S_A.PAR">
+        <Volume>1.58965333333334E-08</Volume>
+        <Area>8.53223105461581E-05</Area>
+        <Mass>1.82810133333335E-05</Mass>
+    </DocumentTree_Part>
+    <DocumentTree_Part File="C:gear.par">
+        <Volume>0.000149088896095769</Volume>
+        <Area>0.0437152491948823</Area>
+        <Mass>1.16781332311816</Mass>
+    </DocumentTree_Part>
+</RootAssemblyFile>
