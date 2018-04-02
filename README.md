@@ -26,5 +26,5 @@ Mainly reference in: "Samples-master/Assembly/ReportDocumentTree" and "Samples-m
 
 ### FBX SDK 
 I am using [FBX SDK 2018 Windows VS2013](http://usa.autodesk.com/adsk/servlet/pc/item?siteID=123112&id=26416130)  
-There are fully example code for FBX SDK.  
-I used `ImportScene` project and modified a few to read out my Autodesk MAYA model.  
+There are fully example code for [FBX SDK](http://help.autodesk.com/view/FBX/2018/ENU/).  
+I used `samples/ImportScene` project and modified a few to read out my Autodesk MAYA model.  
