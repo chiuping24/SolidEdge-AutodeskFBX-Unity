@@ -38,7 +38,10 @@ namespace WriteXML
                 
 ```
 
-#### Using XPath (XQuery) to view and rewrite the XML structure in C#
+#### Using XPath (XQuery) to view and rewrite the XML structure in C#  
+For re-structure or find the node of XML data.  
+XPath/ XQuery is the good tool for SQL language.  
+Here shows the C# example to rewrite the XML from "PART - Tx - KeyTime/Value" to "KeyTime - PART - Tx/Value".  
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -82,7 +85,7 @@ namespace XmlQuery
                 }
                 if (reTime == 0) { Key.Add(int.Parse(xn.Attributes["Time_ms"].InnerText)); }
             }
-            Key.Sort();
+            Key.Sort(); 
             int nTime = 0;
             foreach (int i in Key)
             {
@@ -105,7 +108,8 @@ namespace XmlQuery
                         nPART++;
                         if (nPART > 1) { writerXml.WriteEndElement(); }
                         writerXml.WriteStartElement("Module");
-                        writerXml.WriteAttributeString("name", xnTime.ParentNode.ParentNode.Attributes["name"].InnerText);
+                        writerXml.WriteAttributeString("name", 
+                            xnTime.ParentNode.ParentNode.Attributes["name"].InnerText);
                     }
                     PART = xnTime.ParentNode.ParentNode.Attributes["name"].InnerText;
                     writerXml.WriteElementString(xnTime.ParentNode.Name, xnTime.InnerText);
