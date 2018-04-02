@@ -70,7 +70,8 @@ namespace XmlQuery
             xml.Load(args[0]);
 
             List<int> Key = new List<int>();
-            XmlNodeList xnList0 = xml.SelectNodes("/Display_Model/Animation/Animation_Stack/AnimLayer/Part/*/Key"); // * =Tx Ty Tz R..S..
+            XmlNodeList xnList0 = xml.SelectNodes("/Display_Model/Animation/Animation_Stack/AnimLayer/Part/*/Key");
+            // * =Tx Ty Tz R..S..
 
             foreach (XmlNode xn in xnList0)
             {
@@ -109,7 +110,8 @@ namespace XmlQuery
                     PART = xnTime.ParentNode.ParentNode.Attributes["name"].InnerText;
                     writerXml.WriteElementString(xnTime.ParentNode.Name, xnTime.InnerText);
                     //writerXml.WriteEndElement();
-                    Console.WriteLine("time = " + xnTime.Attributes["Time_ms"].InnerText + ", " +       xnTime.ParentNode.ParentNode.Attributes["name"].InnerText
+                    Console.WriteLine("time = " + xnTime.Attributes["Time_ms"].InnerText + ", " 
+                        + xnTime.ParentNode.ParentNode.Attributes["name"].InnerText
                         + ", " + xnTime.ParentNode.Name + " " + xnTime.InnerText);
                 }
                 //writerXml.WriteEndElement();
