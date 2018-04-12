@@ -39,10 +39,10 @@ namespace WriteXML
                 
 ```
 ```csharp  
-writerXml.WriteElementString("Position", "2"); 
+writerXml.WriteElementString("Key", "2"); 
 ```
 
-`<Position>2</Position> `
+`<Key>2</Key> `
   
   
 ```csharp
