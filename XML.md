@@ -14,7 +14,8 @@ namespace WriteXML
         {
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Indent = true;
-            settings.IndentChars = "    ";
+            settings.CloseOutput = true; // close the underlying stream
+            settings.IndentChars = "    ";
             settings.Encoding = Encoding.UTF8;
             XmlWriter writerXml = XmlWriter.Create("PhyProperty.xml", settings);
             try
