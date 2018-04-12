@@ -38,18 +38,21 @@ namespace WriteXML
                              
                 
 ```
+```csharp  
+writerXml.WriteElementString("Position", "2"); 
+```
+
+`<Position>2</Position> `
   
-`writerXml.WriteElementString("Position", "2"); `  
-`<Position>2</Position>`  
   
-  
-`
+```csharp
 writerXml.WriteStartElement("Key");
 writerXml.WriteAttributeString("time", "0.1");
 writerXml.WriteString("2");
 writerXml.WriteEndElement();
-`  
-`<Key time="0.1">2</Key>`  
+```
+ 
+`<Key time="0.1">2</Key>`
 
 
 #### Using XPath (XQuery) to view and rewrite the XML structure in C#  
