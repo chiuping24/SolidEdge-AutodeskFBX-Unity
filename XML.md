@@ -39,6 +39,17 @@ namespace WriteXML
                 
 ```
 
+`writerXml.WriteElementString("Position", "2"); `  
+<Position>2</Position>
+`
+writerXml.WriteStartElement("Key");
+writerXml.WriteAttributeString("time", "0.1");
+writerXml.WriteString("2");
+writerXml.WriteEndElement();
+`
+<Key time="0.1">2</Key>
+
+
 #### Using XPath (XQuery) to view and rewrite the XML structure in C#  
 For re-structure or find the node of XML data.  
 XPath/ XQuery is the good tool for SQL language.  
