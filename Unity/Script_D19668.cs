@@ -174,6 +174,8 @@ public class Script_D19668 : MonoBehaviour
     double TimeStep = 0.5;
     double RecordTime = -0.5;  //0 - TimeStep;
     //int speedOn = 1;
+    
+    // Unity UI bottom ===============================
     public void SpeedUp()
     {
         //speedOn++;
@@ -191,6 +193,8 @@ public class Script_D19668 : MonoBehaviour
         Debug.Log(" Bye Bye! ");
         Application.Quit();
     }
+    //==================================================
+    
     void Update()
     {
         //Application.targetFrameRate = 1;
@@ -236,8 +240,6 @@ public class Script_D19668 : MonoBehaviour
             RecordXml.Close();
             enabled = true; // will not call Update function anymore!
             //Time.timeScale = 0;
-            //Application.Quit();
         }
-
     }
 }
