@@ -1,4 +1,6 @@
-﻿using System.Collections;
+// Record all model structure position/rotation/scale data in time series
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 //using UnityEditor;
@@ -17,7 +19,7 @@ using System.Xml.Xsl;
 public class Script_D19668 : MonoBehaviour
 {
     
-    public GameObject ASMmodel;
+    public GameObject Amodel;
     public static Animator anim;
     //int layer = 1;
     XmlWriter RecordXml;
@@ -37,7 +39,7 @@ public class Script_D19668 : MonoBehaviour
         //w.WriteLine("test txt output");
         //w.Close();
 
-        //if (ASMmodel == null) { ASMmodel = GameObject.Find("ASM_01-D19668"); }
+        //if (Amodel == null) { Amodel = GameObject.Find("A_01-D19668"); }
         anim = GetComponent<Animator>();
 
         //QualitySettings.vSyncCount = 0;
@@ -69,8 +71,6 @@ public class Script_D19668 : MonoBehaviour
                 int Geom = 0;
                 if (obj.transform.GetChild(nchild).name.ToString().Length >= 6 && obj.transform.GetChild(nchild).name.ToString().Substring(0, 6) == "3DGeom")
                 {
-                    //Debug.Log("@@@@@@ Geom position: "+ obj.transform.GetChild(nchild).transform.position.ToString());
-                    //Debug.Log("@@@@@@ Geom rotation: " + obj.transform.GetChild(nchild).transform.eulerAngles.ToString());
                     //if (obj.transform.GetChild(nchild).transform.position.ToString() == "(0.0, 0.0, 0.0)"
                     //    && obj.transform.GetChild(nchild).transform.eulerAngles.ToString() == "(0.0, 0.0, 0.0)"
                     //    && obj.transform.GetChild(nchild).transform.localScale.ToString() == "(1.0, 1.0, 1.0)")
@@ -234,7 +234,7 @@ public class Script_D19668 : MonoBehaviour
         {
             RecordXml.WriteFullEndElement();
             RecordXml.Close();
-            enabled = false; // will not call Update function anymore!
+            enabled = true; // will not call Update function anymore!
             //Time.timeScale = 0;
             //Application.Quit();
         }
